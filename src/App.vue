@@ -1,6 +1,6 @@
 <template>
-  <div id="app" :class="mode">
-    <top-nav-bar :mode="mode" />
+  <div id="app">
+    <top-nav-bar />
   </div>
 </template>
 
@@ -10,11 +10,6 @@ import TopNavBar from "./components/TopNavBar.vue";
 export default {
   name: "App",
 
-  data() {
-    return {
-      mode: "light"
-    };
-  },
   components: {
     TopNavBar
   },
@@ -24,7 +19,7 @@ export default {
 
 <style>
 :root {
-  font-size: 16px;
+  font-size: 12px;
 }
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 * {

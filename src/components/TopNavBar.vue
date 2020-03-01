@@ -1,7 +1,7 @@
 <template>
   <header>
     <a href="#">
-      <i class="fab fa-reddit"></i>
+      <i class="fab fa-reddit logo-icon"></i>
       <span class="link-text logo-text">NotReddit</span>
     </a>
     <nav class="navbar">
@@ -32,7 +32,7 @@
         </li>
       </ul>
     </nav>
-    <Toggle :mode="mode" />
+    <Toggle :mode="mode" class="toggleBtn" />
   </header>
 </template>
 
@@ -52,13 +52,15 @@ a,
 button {
   font-weight: 500;
   color: #ffcf1b;
-  font-size: 22px;
+  font-size: 1.65rem;
   text-decoration: none;
   list-style: none;
   padding: 0 5px 0 5px;
 }
-.logo-text {
+.logo-text,
+.logo-icon {
   text-transform: lowercase;
+  font-size: 2.5rem;
 }
 
 header {
@@ -93,6 +95,34 @@ button {
 
 @media (max-width: 650px) {
   .link-text {
+    display: none;
+  }
+}
+@media (max-width: 290px) {
+  .link-text {
+    display: none;
+  }
+  .navbar a {
+    font-size: 13px;
+  }
+  .nav-item {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 254px) {
+  li,
+  a,
+  button {
+    padding: 0 1px 0 1px;
+  }
+  header {
+    padding: 0 5px 0 5px;
+  }
+}
+
+@media (max-width: 161px) {
+  .toggleBtn {
     display: none;
   }
 }
