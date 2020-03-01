@@ -32,7 +32,7 @@
         </li>
       </ul>
     </nav>
-    <Toggle :mode="mode" />
+    <Toggle :mode="mode" @toggle="$emit('toggle')" />
     <!-- <button class="switch" id="switch">
       <span>
         <i class="fas fa-sun"></i>

@@ -1,7 +1,11 @@
 <template>
   <div class="toggle-wrapper">
     <label class="toggle">
-      <input type="checkbox" :checked="(mode === 'dark') ? 'checked' : false " />
+      <input
+        type="checkbox"
+        :checked="(mode === 'light') ? 'checked' : false "
+        @change="$emit('toggle')"
+      />
       <span class="toggler round"></span>
     </label>
   </div>
@@ -33,7 +37,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: black;
+  background: thistle;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -50,7 +54,7 @@ export default {
   transition: 0.4s;
 }
 input:checked + .toggler {
-  background: #2e2d42;
+  background: #ffcf1b;
 }
 input:focus + toggler {
   box-shadow: 0 0 2px #2e2d42;

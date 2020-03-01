@@ -1,11 +1,10 @@
 <template>
   <div id="app" :class="mode">
-    <top-nav-bar :mode="mode" />
+    <top-nav-bar :mode="mode" @toggle="toggle" />
   </div>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
 import TopNavBar from "./components/TopNavBar.vue";
 
 export default {
@@ -16,8 +15,16 @@ export default {
     };
   },
   components: {
-    // HelloWorld,
     TopNavBar
+  },
+  methods: {
+    toggle() {
+      if (this.mode === "dark") {
+        this.mode = "light ";
+      } else {
+        this.mode = "dark";
+      }
+    }
   }
 };
 </script>
