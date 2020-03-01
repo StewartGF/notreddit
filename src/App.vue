@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="mode">
-    <top-nav-bar :mode="mode" @toggle="toggle" />
+    <top-nav-bar :mode="mode" />
   </div>
 </template>
 
@@ -9,6 +9,7 @@ import TopNavBar from "./components/TopNavBar.vue";
 
 export default {
   name: "App",
+
   data() {
     return {
       mode: "light"
@@ -17,15 +18,7 @@ export default {
   components: {
     TopNavBar
   },
-  methods: {
-    toggle() {
-      if (this.mode === "dark") {
-        this.mode = "light ";
-      } else {
-        this.mode = "dark";
-      }
-    }
-  }
+  methods: {}
 };
 </script>
 
@@ -42,6 +35,7 @@ export default {
 #app {
   height: 100vh;
   min-width: 100vw;
+  transition: background 0.35s ease-in-out;
 }
 
 .light {
