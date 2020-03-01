@@ -71,11 +71,21 @@ header {
   height: 5%;
   box-sizing: border-box;
   padding: 0 15px 0 15px;
+  /* -moz-box-shadow: 0.5px 0.5px #ccc;
+  -webkit-box-shadow: 0.5px 0.5px #ccc;
+  box-shadow: 0.5px 0.5px #ccc; */
 }
+
+/* .dark header {
+  -moz-box-shadow: 0.5px 0.5px rgb(16, 10, 71);
+  -webkit-box-shadow: 0.5px 0.5px rgb(16, 10, 71);
+  box-shadow: 0.5px 0.5px rgb(16, 10, 71);
+  transition: all 0.3s ease 0s;
+} */
 .dark a,
 li,
 button {
-  color: thistle;
+  color: #eebbc3;
 }
 .dark .nav-link:hover {
   color: rgb(153, 129, 153);
@@ -110,7 +120,7 @@ button {
   }
 }
 
-@media (max-width: 254px) {
+@media (max-width: 260px) {
   li,
   a,
   button {
@@ -121,9 +131,14 @@ button {
   }
 }
 
-@media (max-width: 161px) {
+@media (max-width: 171px) {
   .toggleBtn {
     display: none;
+  }
+  li,
+  a,
+  button {
+    padding: 0 3px 0 0;
   }
 }
 </style>
