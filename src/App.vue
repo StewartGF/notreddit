@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="app" :class="mode">
+    <top-nav-bar :mode="mode" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+import TopNavBar from "./components/TopNavBar.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      mode: "light"
+    };
+  },
   components: {
-    HelloWorld
+    // HelloWorld,
+    TopNavBar
   }
 };
 </script>
 
 <style>
+:root {
+  font-size: 16px;
+}
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito";
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  min-width: 100vw;
+}
+
+.light {
+  background-color: #f3f3f3;
+  color: #111111;
+}
+.dark {
+  background-color: #2e2d42;
+  color: white;
 }
 </style>
