@@ -2,7 +2,7 @@
   <header>
     <a href="#">
       <i class="fab fa-reddit logo-icon"></i>
-      <span class="link-text logo-text">NotReddit</span>
+      <span class="link-text logo-text" style="margin-left:2px">NotReddit</span>
     </a>
     <nav class="navbar">
       <ul class="navbar-nav">
@@ -52,7 +52,7 @@ a,
 button {
   font-weight: 500;
   color: #ffcf1b;
-  font-size: 1.65rem;
+  font-size: 2rem;
   text-decoration: none;
   list-style: none;
   padding: 0 5px 0 5px;
@@ -68,9 +68,9 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 5%;
+  height: 10%;
   box-sizing: border-box;
-  padding: 0 15px 0 15px;
+  padding: 0 100px 0 20px;
   /* -moz-box-shadow: 0.5px 0.5px #ccc;
   -webkit-box-shadow: 0.5px 0.5px #ccc;
   box-shadow: 0.5px 0.5px #ccc; */
@@ -103,9 +103,15 @@ button {
   color: #d4ad20;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 651px) {
   .link-text {
     display: none;
+  }
+}
+
+@media (max-width: 745px) {
+  header {
+    padding: 0 20px 0 20px;
   }
 }
 @media (max-width: 290px) {
@@ -117,6 +123,20 @@ button {
   }
   .nav-item {
     padding-bottom: 5px;
+  }
+}
+@media (max-width: 335px) {
+  .link-text {
+    display: none;
+  }
+  .navbar a {
+    font-size: 13px;
+  }
+  .nav-item {
+    padding-bottom: 5px;
+  }
+  header {
+    padding: 0 15px 0 15px;
   }
 }
 
