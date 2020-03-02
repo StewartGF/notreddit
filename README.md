@@ -25,6 +25,8 @@ swipe to renew, donde cada vez que quieran ver una nueva noticia, tengan que sac
 ### PRE REQUISITOS
 
 - NodeJS (incluye NPM) - https://nodejs.org/en/download
+- npm install
+- npm run start
 
 ### IDE
 

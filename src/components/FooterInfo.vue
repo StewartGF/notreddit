@@ -30,6 +30,7 @@ export default {};
   bottom: 0;
   width: 100vw;
   height: 10vh;
+  padding-right: 50px;
 }
 
 .footer-item {
@@ -53,6 +54,16 @@ export default {};
 }
 
 @media (max-width: 185px) {
+  .footer a {
+    font-size: 2rem;
+    color: #2e2d42;
+  }
+  .dark .footer a {
+    font-size: 2rem;
+    color: #fffffe;
+  }
+}
+@media (max-width: 650px) {
   .footer a {
     font-size: 2rem;
     color: #2e2d42;

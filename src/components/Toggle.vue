@@ -1,6 +1,6 @@
 <template>
   <div class="toggle-wrapper" v-on:click="btnToggle">
-    <button class="switch active" id="switch">
+    <button class="switch" id="switch">
       <span>
         <i class="fas fa-sun"></i>
       </span>
@@ -56,7 +56,7 @@ export default {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .switch.active {
-  background: #ffd803;
+  background: #ffaf1b;
   color: #000;
 }
 

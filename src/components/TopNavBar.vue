@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <div class="header-container">
     <a href="#">
       <i class="fab fa-reddit logo-icon"></i>
       <span class="link-text logo-text" style="margin-left:2px">NotReddit</span>
@@ -33,7 +33,7 @@
       </ul>
     </nav>
     <Toggle :mode="mode" class="toggleBtn" />
-  </header>
+  </div>
 </template>
 
 <script>
@@ -51,7 +51,7 @@ li,
 a,
 button {
   font-weight: 500;
-  color: #ffcf1b;
+  color: #ffaf1b;
   font-size: 2rem;
   text-decoration: none;
   list-style: none;
@@ -64,30 +64,28 @@ button {
   font-weight: 700;
 }
 
-header {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 10%;
+  height: 10vh;
   box-sizing: border-box;
   padding: 0 100px 0 20px;
-  position: relative;
-  /* -moz-box-shadow: 0.5px 0.5px #ccc;
-  -webkit-box-shadow: 0.5px 0.5px #ccc;
-  box-shadow: 0.5px 0.5px #ccc; */
+  position: fixed;
+  background-color: #e9e9e9;
+  z-index: 9;
 }
 
-/* .dark header {
-  -moz-box-shadow: 0.5px 0.5px rgb(16, 10, 71);
-  -webkit-box-shadow: 0.5px 0.5px rgb(16, 10, 71);
-  box-shadow: 0.5px 0.5px rgb(16, 10, 71);
-  transition: all 0.3s ease 0s;
-} */
+.dark .header-container {
+  background-color: #2e2d42;
+}
+
 .dark a,
 li,
 button {
-  color: #eebbc3;
+  color: #ed7268;
+  /* color: #eebbc3; */
 }
 .dark .nav-link:hover {
   color: rgb(153, 129, 153);
