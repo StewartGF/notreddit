@@ -13,13 +13,17 @@
 
 <script>
 export default {
-  props: ["mode"],
   methods: {
     btnToggle() {
       const btnSwitch = document.querySelector("#switch");
       //cambio en el div app que esta en App.vue la clase, entre dark y light
-      document.getElementById("app").classList.toggle("dark");
-      document.getElementById("app").classList.toggle("light");
+      if (document.getElementById("app").classList.contains("light")) {
+        document.getElementById("app").classList.add("dark");
+        document.getElementById("app").classList.remove("light");
+      } else {
+        document.getElementById("app").classList.remove("dark");
+        document.getElementById("app").classList.add("light");
+      }
       btnSwitch.classList.toggle("active");
     }
   }

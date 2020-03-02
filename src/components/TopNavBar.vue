@@ -61,6 +61,7 @@ button {
 .logo-icon {
   text-transform: lowercase;
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 header {
@@ -71,6 +72,7 @@ header {
   height: 10%;
   box-sizing: border-box;
   padding: 0 100px 0 20px;
+  position: relative;
   /* -moz-box-shadow: 0.5px 0.5px #ccc;
   -webkit-box-shadow: 0.5px 0.5px #ccc;
   box-shadow: 0.5px 0.5px #ccc; */
