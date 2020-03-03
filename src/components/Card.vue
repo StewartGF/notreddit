@@ -65,8 +65,9 @@ export default {};
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
+  box-sizing: border-box;
 }
 
 .card {
@@ -90,7 +91,6 @@ export default {};
   text-overflow: ellipsis;
   width: 90%;
   text-align: center;
-  overflow: hidden;
 }
 
 .card-body {

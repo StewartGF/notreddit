@@ -47,15 +47,19 @@ body {
 }
 #app {
   height: 100%;
-  min-width: 100vw;
+  min-width: 100%;
   transition: background 0.35s ease-in-out;
   position: relative;
+  /* overflow: hidden; */
 }
 .container {
-  height: 100%;
-  width: 100vw;
+  height: 90%;
+  width: 100%;
   /* para evitar el header */
   padding-top: 10vh;
+  /* esto hace que el scroll se vea por debajo */
+  overflow: auto;
+  /* esto hace que el scroll se vea por debajo */
 }
 .wave {
   fill: #ff891b;
@@ -63,6 +67,7 @@ body {
   position: fixed;
   left: 0;
   opacity: 0.7;
+  margin-right: 0.01%;
 }
 .dark .wave {
   fill: #cc6d64;
