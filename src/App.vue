@@ -1,13 +1,7 @@
 <template>
-  <div id="app" class="light">
+  <div id="app">
     <top-nav-bar />
     <div class="container">
-      <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill-opacity="1"
-          d="M0,224L80,234.7C160,245,320,267,480,261.3C640,256,800,224,960,208C1120,192,1280,192,1360,192L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        />
-      </svg>
       <Card />
     </div>
     <footer-info />
@@ -43,49 +37,31 @@ export default {
 }
 html,
 body {
+  transition: background 0.35s ease-in-out;
   height: 100%;
 }
 #app {
-  height: 100%;
+  /* esto soluciona el problema con los dobles scrollbar y que nada quepa dentro del 100% body y html */
+  max-height: 100%;
+  /* esto soluciona el problema con los dobles scrollbar y que nada quepa dentro del 100% body y html */
   min-width: 100%;
-  transition: background 0.35s ease-in-out;
   position: relative;
-  /* overflow: hidden; */
 }
 .container {
-  height: 90%;
+  height: 100%;
   width: 100%;
   /* para evitar el header */
-  padding-top: 10vh;
+  padding-top: 70px;
   /* esto hace que el scroll se vea por debajo */
   overflow: auto;
   /* esto hace que el scroll se vea por debajo */
 }
-.wave {
-  fill: #ff891b;
-  bottom: 0;
-  position: fixed;
-  left: 0;
-  opacity: 0.7;
-  margin-right: 0.01%;
-}
-.dark .wave {
-  fill: #cc6d64;
-}
 .light {
-  background-color: #e9e9e9;
+  background-color: #fffffe;
   color: #111111;
-  width: 100%;
-  height: 100%;
 }
 .dark {
   background-color: #2e2d42;
   color: white;
-  width: 100%;
-  height: 100%;
-}
-
-h1 {
-  text-align: center;
 }
 </style>

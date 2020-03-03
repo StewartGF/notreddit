@@ -3,7 +3,7 @@
     <ul>
       <li class="footer-item">
         <a href="#">
-          <i class="fab fa-github"></i>
+          <i id="githubIcon" class="fab fa-github"></i>
         </a>
       </li>
       <li class="footer-item">
@@ -38,9 +38,13 @@ export default {};
   padding: 0 15px 0 15px;
 }
 
-.footer a {
+.dark .footer a {
   font-size: 3.5rem;
-  color: white;
+  color: #ee6154;
+}
+.light .footer a {
+  font-size: 3.5rem;
+  color: rgb(255, 166, 0);
 }
 
 @media (max-width: 335px) {

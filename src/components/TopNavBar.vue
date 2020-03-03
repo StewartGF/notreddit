@@ -50,7 +50,7 @@ export default {
 li,
 a,
 button {
-  font-weight: 500;
+  font-weight: 400;
   color: #ffaf1b;
   font-size: 2rem;
   text-decoration: none;
@@ -62,6 +62,7 @@ button {
   text-transform: lowercase;
   font-size: 2.5rem;
   font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
 .header-container {
@@ -69,13 +70,13 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 10%;
+  height: 65px;
   box-sizing: border-box;
-  padding: 0 100px 0 20px;
+  padding: 0 60px 0 20px;
   position: fixed;
-  background-color: #e9e9e9;
-  z-index: 9;
+  background-color: #fffffe;
   transition: background 0.35s ease-in-out;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 .dark .header-container {
