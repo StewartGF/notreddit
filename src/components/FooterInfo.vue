@@ -28,8 +28,8 @@ export default {};
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
-  width: 100vw;
-  height: 10vh;
+  width: 100%;
+  height: 10%;
   padding-right: 50px;
 }
 

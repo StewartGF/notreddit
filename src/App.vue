@@ -2,8 +2,6 @@
   <div id="app" class="light">
     <top-nav-bar />
     <div class="container">
-      <h1>r/News</h1>
-
       <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill-opacity="1"
@@ -43,6 +41,10 @@ export default {
   padding: 0;
   font-family: "Nunito";
 }
+html,
+body {
+  height: 100%;
+}
 #app {
   height: 100%;
   min-width: 100vw;
@@ -50,14 +52,13 @@ export default {
   position: relative;
 }
 .container {
-  height: 90vh;
+  height: 100%;
   width: 100vw;
   /* para evitar el header */
   padding-top: 10vh;
 }
 .wave {
   fill: #ff891b;
-  z-index: 0;
   bottom: 0;
   position: fixed;
   left: 0;
@@ -69,10 +70,14 @@ export default {
 .light {
   background-color: #e9e9e9;
   color: #111111;
+  width: 100%;
+  height: 100%;
 }
 .dark {
   background-color: #2e2d42;
   color: white;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {

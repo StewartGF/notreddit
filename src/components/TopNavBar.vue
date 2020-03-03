@@ -68,13 +68,14 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 10vh;
+  width: 100%;
+  height: 10%;
   box-sizing: border-box;
   padding: 0 100px 0 20px;
   position: fixed;
   background-color: #e9e9e9;
   z-index: 9;
+  transition: background 0.35s ease-in-out;
 }
 
 .dark .header-container {
@@ -85,7 +86,6 @@ button {
 li,
 button {
   color: #ed7268;
-  /* color: #eebbc3; */
 }
 .dark .nav-link:hover {
   color: rgb(153, 129, 153);

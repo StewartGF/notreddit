@@ -1,5 +1,7 @@
 <template>
   <div class="cards-container">
+    <h1>r/News</h1>
+
     <div class="card">
       <div class="card-title">
         <h1>Propiedades Computadas y Observadores</h1>
@@ -64,7 +66,7 @@ export default {};
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
 }
 
 .card {
