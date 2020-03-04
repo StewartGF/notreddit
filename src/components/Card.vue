@@ -169,16 +169,14 @@ export default {};
 }
 
 .card {
-  width: 40%;
+  width: 60%;
   background-color: white;
   display: inline-block;
   padding: 15px 15px 15px 15px;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
-  /* hacerlo que crezca dependiendo de la cantidad de texto */
-  /* height: 200px; */
   border: 1px solid #f1f1f1;
   margin: 1% 1% 1% 1%;
-  transition: background 0.15s ease-in-out;
+  transition: background 0.25s ease-in-out;
   border-radius: 6px;
 }
 .dark .card {
@@ -209,5 +207,11 @@ export default {};
   width: 90%;
   text-align: center;
   overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .card-title h1 {
+    font-size: 1.1rem;
+  }
 }
 </style>

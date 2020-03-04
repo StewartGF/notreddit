@@ -2,12 +2,12 @@
   <div class="footer">
     <ul>
       <li class="footer-item">
-        <a href="#">
+        <a href="www.github.com/StewartGF" target="_blank">
           <i id="githubIcon" class="fab fa-github"></i>
         </a>
       </li>
       <li class="footer-item">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/stewart-granger-flores/" target="_blank">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -30,12 +30,12 @@ export default {};
   bottom: 0;
   width: 100%;
   height: 10%;
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .footer-item {
   display: inline-block;
-  padding: 0 15px 0 15px;
+  padding: 0 0 0 10px;
 }
 
 .dark .footer a {
@@ -47,45 +47,25 @@ export default {};
   color: rgb(255, 166, 0);
 }
 
-@media (max-width: 335px) {
-  .footer {
-    height: 5vh;
-  }
-  .footer a {
-    font-size: 2rem;
-    color: white;
-  }
-}
-
-@media (max-width: 185px) {
-  .footer a {
-    font-size: 2rem;
-    color: #2e2d42;
-  }
-  .dark .footer a {
-    font-size: 2rem;
-    color: #fffffe;
-  }
-}
 @media (max-width: 650px) {
-  .footer a {
+  .light .footer a {
     font-size: 2rem;
-    color: #2e2d42;
   }
   .dark .footer a {
     font-size: 2rem;
-    color: #fffffe;
   }
 }
-
-@media (max-width: 110px) {
-  .footer a {
-    font-size: 1rem;
-    color: #2e2d42;
+@media (max-width: 560px) {
+  .light .footer-item {
+    display: list-item;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    list-style-type: none;
   }
-  .dark .footer a {
-    font-size: 1rem;
-    color: #fffffe;
+}
+@media (max-width: 380px) {
+  .footer {
+    display: none;
   }
 }
 </style>

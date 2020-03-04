@@ -57,12 +57,14 @@ button {
   list-style: none;
   padding: 0 5px 0 5px;
 }
-.logo-text,
-.logo-icon {
+.logo-text {
   text-transform: lowercase;
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 1.5px;
+}
+.logo-icon {
+  font-size: 3.5rem;
 }
 
 .header-container {
@@ -110,9 +112,18 @@ button {
   }
 }
 
-@media (max-width: 745px) {
+@media (max-width: 700px) {
   header {
     padding: 0 20px 0 20px;
+  }
+  .logo-text {
+    font-size: 1.7rem;
+  }
+  .logo-icon {
+    font-size: 2.5rem;
+  }
+  .toggleBtn {
+    transform: scale(0.8);
   }
 }
 @media (max-width: 290px) {
@@ -126,7 +137,7 @@ button {
     padding-bottom: 5px;
   }
 }
-@media (max-width: 335px) {
+@media (max-width: 380px) {
   .link-text {
     display: none;
   }
@@ -136,7 +147,7 @@ button {
   .nav-item {
     padding-bottom: 5px;
   }
-  header {
+  .header-container {
     padding: 0 15px 0 15px;
   }
 }
