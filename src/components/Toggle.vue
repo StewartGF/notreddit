@@ -52,10 +52,10 @@ export default {
   left: 0;
   right: unset;
   border-radius: 100px;
-  transition: 0.3s ease all;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .switch.active {
+  transition: background 0.35s ease-in-out;
   background: #ffaf1b;
   color: #000;
 }
@@ -71,5 +71,6 @@ span {
   display: block;
   background: none;
   color: #fff;
+  font-size: 20px;
 }
 </style>
