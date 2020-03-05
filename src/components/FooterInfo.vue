@@ -40,11 +40,11 @@ export default {};
 
 .dark .footer a {
   font-size: 3.5rem;
-  color: #ee6154;
+  color: #fffffe;
 }
 .light .footer a {
   font-size: 3.5rem;
-  color: rgb(255, 166, 0);
+  color: #fffffe;
 }
 
 @media (max-width: 650px) {

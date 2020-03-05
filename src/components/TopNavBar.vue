@@ -57,6 +57,11 @@ button {
   list-style: none;
   padding: 0 5px 0 5px;
 }
+.dark a,
+li,
+button {
+  color: #e69fa9;
+}
 .logo-text {
   text-transform: lowercase;
   font-size: 2.5rem;
@@ -77,7 +82,7 @@ button {
   padding: 0 60px 0 20px;
   position: fixed;
   background-color: #fffffe;
-  transition: background 0.35s ease-in-out;
+  transition: background 0.25s ease-in-out;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
@@ -85,11 +90,6 @@ button {
   background-color: #2e2d42;
 }
 
-.dark a,
-li,
-button {
-  color: #ed7268;
-}
 .dark .nav-link:hover {
   color: rgb(153, 129, 153);
 }

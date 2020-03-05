@@ -175,7 +175,7 @@ export default {};
   padding: 15px 15px 15px 15px;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
   border: 1px solid #f1f1f1;
-  margin: 1% 1% 1% 1%;
+  margin: 0.3% 1% 0.5% 1%;
   transition: background 0.25s ease-in-out;
   border-radius: 6px;
 }
