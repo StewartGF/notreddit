@@ -2,7 +2,7 @@
   <div class="footer">
     <ul>
       <li class="footer-item">
-        <a href="www.github.com/StewartGF" target="_blank">
+        <a href="https://www.github.com/StewartGF" target="_blank">
           <i id="githubIcon" class="fab fa-github"></i>
         </a>
       </li>
