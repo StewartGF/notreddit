@@ -15,14 +15,14 @@ export default {};
 .lds-ellipsis {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
 }
 .light .lds-ellipsis div {
   position: absolute;
   top: 33px;
-  width: 13px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #dc3e04;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
@@ -30,8 +30,8 @@ export default {};
 .dark .lds-ellipsis div {
   position: absolute;
   top: 33px;
-  width: 13px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #e69fa9;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);

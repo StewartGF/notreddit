@@ -102,7 +102,7 @@ button {
 }
 
 .dark .nav-link:hover {
-  color: rgb(153, 129, 153);
+  color: #cf7c87;
 }
 
 .nav-item {

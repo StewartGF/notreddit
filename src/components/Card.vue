@@ -1,16 +1,18 @@
 <template>
   <div class="card">
     <div class="card-title">
-      <span> posted by u/{{ post.author }}</span>
+      <span>posted by u/{{ post.author }}</span>
       <span class="pinned-text" v-if="post.stickied">
-        pinned post <span class="tack"></span>
+        pinned post
+        <span class="tack"></span>
       </span>
-      <h1>
-        {{ post.title }}
-      </h1>
+      <h1>{{ post.title }}</h1>
     </div>
     <div class="card-body">
-      <span>Comments : {{ post.num_comments }}| Upvotes : {{ post.ups }}</span>
+      <span class="comments">Comments :</span>
+      {{ post.num_comments }} |
+      <span class="upvotes">Upvotes :</span>
+      {{ Math.abs(post.ups ) > 999 ? Math.sign(post.ups )*((Math.abs(post.ups )/1000).toFixed(1)) + 'k' : Math.sign(post.ups )*Math.abs(post.ups ) }}
     </div>
   </div>
 </template>
@@ -22,6 +24,18 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.light .upvotes,
+.light .comments {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #dc3e04;
+}
+.dark .upvotes,
+.dark .comments {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #e69fa9;
+}
 .pinned-text {
   font-style: italic;
   margin-left: 50px;
