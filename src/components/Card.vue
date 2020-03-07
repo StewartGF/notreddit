@@ -6,7 +6,7 @@
       </h1>
     </div>
     <div class="card-body">
-      <span>Comments : | Upvotes :</span>
+      <span>Comments : {{ post.num_comments }}| Upvotes : {{ post.ups }}</span>
     </div>
   </div>
 </template>

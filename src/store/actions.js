@@ -1,13 +1,9 @@
 // export const getSubreddit = ({ commit }) => {};
-export const getPosts = async ({ commit }) => {
-  let response = await fetch("https://www.reddit.com/r/showerthoughts.json");
-  let data = await response.json();
-  console.log(
-    "%c--------  data",
-    "background: #41B883; color: white; font-size:14px"
+export const getPosts = async ({ commit }, payload) => {
+  let response = await fetch(
+    `https://www.reddit.com/r/${payload.subreddit}/${payload.sort}/.json`
   );
-  data.data.children.shift();
-  data.data.children.shift();
+  let data = await response.json();
   console.log(data.data.children);
   commit("SET_POSTS_DATA", data.data.children);
 };

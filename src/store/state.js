@@ -1,4 +1,5 @@
 export default {
+  sort: "hot",
   redditPosts: [],
-  actualSubreddit: ""
+  actualSubreddit: "Showerthoughts"
 };

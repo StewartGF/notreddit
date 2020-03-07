@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="cards-container">
-      <h1 class="actual-subreddit">r/News</h1>
+      <h1 class="actual-subreddit">
+        r/{{ this.$store.state.actualSubreddit }}
+      </h1>
       <Card v-for="post in posts" :key="post.id" :post="post.data" />
     </div>
   </div>
@@ -20,7 +22,10 @@ export default {
     }
   },
   mounted() {
-    this.$store.dispatch("getPosts");
+    this.$store.dispatch("getPosts", {
+      subreddit: "showerthoughts",
+      sort: this.$store.state.sort
+    });
   }
 };
 </script>
