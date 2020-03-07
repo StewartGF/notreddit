@@ -9,10 +9,14 @@
       <h1>{{ post.title }}</h1>
     </div>
     <div class="card-body">
-      <span class="comments">Comments :</span>
-      {{ post.num_comments }} |
-      <span class="upvotes">Upvotes :</span>
-      {{ Math.abs(post.ups ) > 999 ? Math.sign(post.ups )*((Math.abs(post.ups )/1000).toFixed(1)) + 'k' : Math.sign(post.ups )*Math.abs(post.ups ) }}
+      <span class="bloque1comments">
+        <span class="comments">Comments:</span>
+        <span class="numeros">{{ post.num_comments.toLocaleString() }}</span>
+      </span>
+      <span class="bloque2ups">
+        <span class="upvotes">Upvotes:</span>
+        <span class="numeros">{{ post.ups.toLocaleString() }}</span>
+      </span>
     </div>
   </div>
 </template>
@@ -24,11 +28,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.numeros {
+  font-weight: 700;
+  margin-left: 2px;
+}
 .light .upvotes,
 .light .comments {
   font-weight: 700;
   font-size: 1.1rem;
   color: #dc3e04;
+  margin-left: 3px;
 }
 .dark .upvotes,
 .dark .comments {
@@ -89,6 +98,20 @@ export default {
 @media (max-width: 1000px) {
   .card-title h1 {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 450px) {
+  .bloque1comments {
+    float: left;
+  }
+  .bloque2ups {
+    float: left;
+  }
+}
+
+@media (max-width: 550px) {
+  .pinned-text {
+    display: table-cell;
   }
 }
 </style>
