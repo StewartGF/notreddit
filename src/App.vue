@@ -2,7 +2,7 @@
   <div id="app">
     <top-nav-bar />
     <div class="container">
-      <Card />
+      <card-container />
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
       <path
@@ -17,14 +17,14 @@
 <script>
 import TopNavBar from "./components/TopNavBar.vue";
 import FooterInfo from "./components/FooterInfo.vue";
-import Card from "./components/Card.vue";
+import CardContainer from "./components/CardContainer.vue";
 
 export default {
   name: "App",
 
   components: {
     TopNavBar,
-    Card,
+    CardContainer,
     FooterInfo
   },
   methods: {}

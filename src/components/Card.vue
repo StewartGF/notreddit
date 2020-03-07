@@ -1,205 +1,23 @@
 <template>
-  <div class="cards-container">
-    <h1 class="actual-subreddit">r/News</h1>
-
-    <div class="card">
-      <div class="card-title">
-        <h1>
-          Propiedades Computadas y Observadores Observadoreslore Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Debitis eaque officiis
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?is
-          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
-          adipisci ullam molestiae rerum corporis provident esse eveniet?
-          doresObservadoresvadorv arroz adorvadorvadorvadorObservadores hola
-          doresObservadoresvadorv
-        </h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
+  <div class="card">
+    <div class="card-title">
+      <h1>
+        {{ post.title }}
+      </h1>
     </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>Propiedades Computadas y Observadores</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>Propiedades Computadas y Observadores</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>
-          Propiedades Computadas y
-          ObservadoresObservadoresObservadoresObservadores
-        </h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>Propiedades Computadas y Observadores</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>Propiedades Computadas y Observadores</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>Propiedades Computadas y Observadores</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>Propiedades Computadas y Observadores</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>Propiedades Computadas y Observadores</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>Propiedades Computadas y Observadores</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>123</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>123</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>123</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>123</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>123</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>123</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>123</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title">
-        <h1>sss</h1>
-      </div>
-      <div class="card-body">
-        <span>Comments : | Upvotes :</span>
-      </div>
+    <div class="card-body">
+      <span>Comments : | Upvotes :</span>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["post"]
+};
 </script>
 
 <style lang="css" scoped>
-.actual-subreddit {
-  font-size: 2rem;
-}
-.cards-container {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  margin: auto;
-}
-
 .card {
   width: 60%;
   background-color: white;
@@ -221,7 +39,6 @@ export default {};
 }
 .card-title {
   white-space: pre-line;
-  /* text-overflow: ellipsis; */
   text-align: start;
   overflow: hidden;
   word-wrap: break-word;
@@ -235,7 +52,6 @@ export default {};
   font-size: 1rem;
   color: rgb(70, 70, 70);
   white-space: pre-line;
-  /* text-overflow: ellipsis; */
   width: 90%;
   text-align: center;
   overflow: hidden;
