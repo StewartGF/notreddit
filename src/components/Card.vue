@@ -1,6 +1,9 @@
 <template>
   <div class="card">
     <div class="card-title">
+      <a :href="post.url" target="_blank">
+        <span class="go-to" data-tool-tip="Ir al post"></span>
+      </a>
       <span>posted by u/{{ post.author }}</span>
       <span class="pinned-text" v-if="post.stickied">
         pinned post
@@ -28,6 +31,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.go-to {
+  background: url("../assets/goto.png") no-repeat;
+  display: inline-block;
+  height: 30px;
+  width: 50px;
+  transform: scale(0.6);
+  position: absolute;
+  top: 0px;
+  right: -20px;
+}
 .numeros {
   font-weight: 700;
   margin-left: 2px;
@@ -65,6 +78,7 @@ export default {
   margin: 0.3% 1% 0.5% 1%;
   transition: background 0.25s ease-in-out;
   border-radius: 6px;
+  position: relative;
 }
 .dark .card {
   color: white;
