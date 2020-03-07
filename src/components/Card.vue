@@ -2,6 +2,9 @@
   <div class="card">
     <div class="card-title">
       <span> posted by u/{{ post.author }}</span>
+      <span class="pinned-text" v-if="post.stickied">
+        pinned post <span class="tack"></span>
+      </span>
       <h1>
         {{ post.title }}
       </h1>
@@ -19,6 +22,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.pinned-text {
+  font-style: italic;
+  margin-left: 50px;
+}
+.tack {
+  background: url("../assets/tack.png") no-repeat;
+  display: inline-block;
+  height: 16px;
+  width: 20px;
+}
 .card {
   width: 60%;
   background-color: white;
@@ -33,7 +46,7 @@ export default {
 .dark .card {
   color: white;
   border: 1px solid #11111a;
-  background-color: #35344b;
+  background-color: #3c3a57;
 }
 .dark .card-body {
   color: white;
@@ -56,6 +69,7 @@ export default {
   width: 90%;
   text-align: center;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 @media (max-width: 1000px) {

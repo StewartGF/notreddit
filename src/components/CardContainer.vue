@@ -43,4 +43,14 @@ export default {
   width: 100%;
   margin: auto;
 }
+@media (max-width: 290px) {
+  .actual-subreddit {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 200px) {
+  .actual-subreddit {
+    font-size: 1rem;
+  }
+}
 </style>

@@ -7,7 +7,10 @@
         </a>
       </li>
       <li class="footer-item">
-        <a href="https://www.linkedin.com/in/stewart-granger-flores/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/stewart-granger-flores/"
+          target="_blank"
+        >
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -45,6 +48,12 @@ export default {};
 .light .footer a {
   font-size: 3.5rem;
   color: #fffffe;
+}
+
+@media (max-width: 760px) {
+  .light .footer a {
+    color: black;
+  }
 }
 
 @media (max-width: 650px) {
