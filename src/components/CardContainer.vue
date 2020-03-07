@@ -1,9 +1,10 @@
 <template>
   <div>
-    <div class="cards-container">
-      <h1 class="actual-subreddit">
-        r/{{ this.$store.state.actualSubreddit }}
-      </h1>
+    <div v-if="isLoading" class="cards-container">
+      <loading-spinner />
+    </div>
+    <div v-else class="cards-container">
+      <h1 class="actual-subreddit">r/{{ this.$store.state.actualSubreddit }}</h1>
       <Card v-for="post in redditPosts" :key="post.id" :post="post.data" />
     </div>
   </div>
@@ -11,14 +12,16 @@
 
 <script>
 import Card from "./Card.vue";
+import LoadingSpinner from "./LoadingSpinner.vue";
 import { mapState } from "vuex";
 
 export default {
   components: {
-    Card
+    Card,
+    LoadingSpinner
   },
   computed: {
-    ...mapState(["redditPosts"])
+    ...mapState(["redditPosts", "isLoading"])
   },
   mounted() {
     this.$store.dispatch("getPosts", {

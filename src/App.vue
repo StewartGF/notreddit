@@ -18,16 +18,13 @@
 import TopNavBar from "./components/TopNavBar.vue";
 import FooterInfo from "./components/FooterInfo.vue";
 import CardContainer from "./components/CardContainer.vue";
-
 export default {
   name: "App",
-
   components: {
     TopNavBar,
     CardContainer,
     FooterInfo
-  },
-  methods: {}
+  }
 };
 </script>
 

@@ -1,5 +1,6 @@
 export default {
   sort: "hot",
   redditPosts: [],
-  actualSubreddit: "Showerthoughts"
+  actualSubreddit: "Showerthoughts",
+  isLoading: false
 };

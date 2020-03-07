@@ -53,8 +53,7 @@ export default {
         sort: this.$store.state.sort
       });
     }
-  },
-  computed: {}
+  }
 };
 </script>
 
