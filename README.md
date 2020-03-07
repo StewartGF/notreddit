@@ -3,11 +3,16 @@
 El plan de este proyecto es comenzar a ver Vue.js, con la idea principal siendo poder ver diferentes subreddits y posteos, ordenarlos según categorías e intentar aplicar una especia de
 swipe to renew, donde cada vez que quieran ver una nueva noticia, tengan que sacarla de la pantalla arrastrando la noticia que ya leyeron.
 
+UPDATE: 07-03-2020 :
+Hoy comencé a aplicar Vuex al proyecto, para empezar a practicar con el.
+
 ## Deploy
 
--
+- https://stewartgf.github.io/notreddit
 
 ## Plan
+
+Idea de comienzo.-
 
 - Preview (29,Feb.2020)
 
@@ -16,6 +21,8 @@ swipe to renew, donde cada vez que quieran ver una nueva noticia, tengan que sac
 ## Versiones usadas
 
 - Vue 2.6.11
+- Vuex 3.2.1
+- coreJs 3.6.4
 - Reddit api - https://www.reddit.com/dev/api/
 
 ## Librerias usadas
