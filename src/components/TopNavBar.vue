@@ -51,7 +51,7 @@ li,
 a,
 button {
   font-weight: 400;
-  color: #ffaf1b;
+  color: #dc3e04;
   font-size: 2rem;
   text-decoration: none;
   list-style: none;
@@ -174,4 +174,3 @@ button {
   }
 }
 </style>
-

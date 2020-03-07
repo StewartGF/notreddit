@@ -4,7 +4,36 @@
 
     <div class="card">
       <div class="card-title">
-        <h1>Propiedades Computadas y Observadores Observadoreslore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque officiis quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet?is quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste, adipisci ullam molestiae rerum corporis provident esse eveniet? doresObservadoresvadorv arroz adorvadorvadorvadorObservadores hola doresObservadoresvadorv</h1>
+        <h1>
+          Propiedades Computadas y Observadores Observadoreslore Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Debitis eaque officiis
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?is
+          quaerat fugit neque! Quae ad eaque quod, debitis ipsum labore iste,
+          adipisci ullam molestiae rerum corporis provident esse eveniet?
+          doresObservadoresvadorv arroz adorvadorvadorvadorObservadores hola
+          doresObservadoresvadorv
+        </h1>
       </div>
       <div class="card-body">
         <span>Comments : | Upvotes :</span>
@@ -28,7 +57,10 @@
     </div>
     <div class="card">
       <div class="card-title">
-        <h1>Propiedades Computadas y ObservadoresObservadoresObservadoresObservadores</h1>
+        <h1>
+          Propiedades Computadas y
+          ObservadoresObservadoresObservadoresObservadores
+        </h1>
       </div>
       <div class="card-body">
         <span>Comments : | Upvotes :</span>
@@ -182,7 +214,7 @@ export default {};
 .dark .card {
   color: white;
   border: 1px solid #11111a;
-  background-color: #2e2d42;
+  background-color: #35344b;
 }
 .dark .card-body {
   color: white;

@@ -64,15 +64,15 @@ body {
 .wave {
   position: fixed;
   bottom: 0;
-  fill: #ffaf1b;
-  opacity: 0.6;
+  fill: #dc3e04;
+  opacity: 0.8;
   z-index: -1;
 }
 .dark .wave {
   position: fixed;
   bottom: 0;
   fill: #eebbc3;
-  opacity: 0.6;
+  opacity: 0.8;
   z-index: -1;
 }
 .light {
