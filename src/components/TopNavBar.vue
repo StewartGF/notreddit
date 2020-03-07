@@ -7,25 +7,25 @@
     <nav class="navbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#" class="nav-link" @click="setSort('hot')">
             <i class="fab fa-hotjar"></i>
             <span class="link-text">Hot</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#" class="nav-link" @click="setSort('new')">
             <i class="far fa-star-half"></i>
             <span class="link-text">New</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#" class="nav-link" @click="setSort('top')">
             <i class="fas fa-arrow-up"></i>
             <span class="link-text">Top</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#" class="nav-link" @click="setSort('rising')">
             <i class="fas fa-chart-line"></i>
             <span class="link-text">Rising</span>
           </a>
@@ -42,7 +42,19 @@ export default {
   props: ["mode"],
   components: {
     Toggle
-  }
+  },
+  methods: {
+    setSort(payload) {
+      this.$store.dispatch("setSort", {
+        sort: payload
+      });
+      this.$store.dispatch("getPosts", {
+        subreddit: this.$store.state.actualSubreddit,
+        sort: this.$store.state.sort
+      });
+    }
+  },
+  computed: {}
 };
 </script>
 

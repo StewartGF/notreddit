@@ -4,26 +4,25 @@
       <h1 class="actual-subreddit">
         r/{{ this.$store.state.actualSubreddit }}
       </h1>
-      <Card v-for="post in posts" :key="post.id" :post="post.data" />
+      <Card v-for="post in redditPosts" :key="post.id" :post="post.data" />
     </div>
   </div>
 </template>
 
 <script>
 import Card from "./Card.vue";
+import { mapState } from "vuex";
 
 export default {
   components: {
     Card
   },
   computed: {
-    posts() {
-      return this.$store.state.redditPosts;
-    }
+    ...mapState(["redditPosts"])
   },
   mounted() {
     this.$store.dispatch("getPosts", {
-      subreddit: "showerthoughts",
+      subreddit: this.$store.state.actualSubreddit,
       sort: this.$store.state.sort
     });
   }

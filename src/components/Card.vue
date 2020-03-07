@@ -1,6 +1,7 @@
 <template>
   <div class="card">
     <div class="card-title">
+      <span> posted by u/{{ post.author }}</span>
       <h1>
         {{ post.title }}
       </h1>
