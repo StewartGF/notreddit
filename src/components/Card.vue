@@ -41,6 +41,10 @@ export default {
   top: 0px;
   right: -20px;
 }
+
+.dark .go-to {
+  filter: invert(100%);
+}
 .numeros {
   font-weight: 700;
   margin-left: 2px;

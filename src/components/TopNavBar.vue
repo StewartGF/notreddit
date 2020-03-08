@@ -95,6 +95,7 @@ button {
   background-color: #fffffe;
   transition: background 0.25s ease-in-out;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dark .header-container {
