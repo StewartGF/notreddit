@@ -7,10 +7,7 @@
         </a>
       </li>
       <li class="footer-item">
-        <a
-          href="https://www.linkedin.com/in/stewart-granger-flores/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/stewart-granger-flores/" target="_blank">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -50,12 +47,6 @@ export default {};
   color: #fffffe;
 }
 
-@media (max-width: 760px) {
-  .light .footer a {
-    color: black;
-  }
-}
-
 @media (max-width: 650px) {
   .light .footer a {
     font-size: 2rem;
@@ -71,10 +62,24 @@ export default {};
     text-decoration: none;
     list-style-type: none;
   }
+  .dark .footer-item {
+    display: list-item;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    list-style-type: none;
+  }
 }
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .footer {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .dark .footer a {
+    color: #e69fa9;
+  }
+  .light .footer a {
+    color: #dc3e04;
   }
 }
 </style>

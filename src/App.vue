@@ -80,4 +80,9 @@ body {
   background-color: #2e2d42;
   color: white;
 }
+@media (max-width: 1000px) {
+  .wave {
+    display: none;
+  }
+}
 </style>

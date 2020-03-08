@@ -166,6 +166,11 @@ button {
     padding: 0 15px 0 15px;
   }
 }
+@media (max-width: 850px) {
+  .link-text {
+    display: none;
+  }
+}
 
 @media (max-width: 260px) {
   li,
