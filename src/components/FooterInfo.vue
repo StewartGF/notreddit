@@ -7,7 +7,10 @@
         </a>
       </li>
       <li class="footer-item">
-        <a href="https://www.linkedin.com/in/stewart-granger-flores/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/stewart-granger-flores/"
+          target="_blank"
+        >
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
