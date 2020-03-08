@@ -93,7 +93,7 @@ button {
   width: 100%;
   height: 65px;
   box-sizing: border-box;
-  padding: 0 60px 0 20px;
+  padding: 0 40px 0 20px;
   position: fixed;
   background-color: #fffffe;
   transition: background 0.25s ease-in-out;
@@ -123,6 +123,11 @@ button {
 
 @media (max-width: 651px) {
   .link-text {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 531px) {
+  .link-text {
     display: none;
   }
 }
@@ -139,6 +144,9 @@ button {
   }
   .toggleBtn {
     transform: scale(0.8);
+  }
+  .link-text {
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 290px) {
@@ -167,7 +175,7 @@ button {
   }
 }
 @media (max-width: 850px) {
-  .link-text {
+  .logo-text {
     display: none;
   }
 }
