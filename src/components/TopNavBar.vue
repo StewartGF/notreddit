@@ -75,9 +75,12 @@ button {
 }
 .logo-text {
   text-transform: lowercase;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 3.5px;
+  /* Para que no lo tome como un elemento más y pueda centrar los link de sorting */
+  position: absolute;
+  /* Para que no lo tome como un elemento más y pueda centrar los link de sorting */
 }
 .logo-icon {
   font-size: 3.5rem;
@@ -115,7 +118,7 @@ button {
 }
 
 .nav-link:hover {
-  color: #d4ad20;
+  color: #ff7b00;
 }
 
 @media (max-width: 651px) {

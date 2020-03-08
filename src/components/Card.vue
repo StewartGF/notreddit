@@ -4,10 +4,13 @@
       <a :href="post.url" target="_blank">
         <span class="go-to" data-tool-tip="Ir al post"></span>
       </a>
-      <span>posted by u/{{ post.author }}</span>
       <span class="pinned-text" v-if="post.stickied">
-        pinned post
         <span class="tack"></span>
+        pinned post
+      </span>
+      <span>
+        posted by u/{{ post.author }}
+        <span class="time-ago">{{timeSince(post.created_utc)}}</span>
       </span>
       <h1>{{ post.title }}</h1>
     </div>
@@ -26,11 +29,51 @@
 
 <script>
 export default {
-  props: ["post"]
+  props: ["post"],
+  methods: {
+    timeSince(utcDate) {
+      /**
+       * esta funcion es de SkySanders en StackOverflow
+       * URL : https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site
+       * la modifiqué para que dijera "just now" para los menores a 1 minuto
+       * y aceptara UTC data (que es lo que entrega la API de reddit)
+       */
+      let date = new Date(utcDate * 1000);
+      let seconds = Math.floor((new Date() - date) / 1000);
+      let interval = Math.floor(seconds / 31536000);
+
+      if (interval >= 1) {
+        return interval + " years ago";
+      }
+      interval = Math.floor(seconds / 2592000);
+      if (interval >= 1) {
+        return interval + " months ago";
+      }
+      interval = Math.floor(seconds / 86400);
+      if (interval >= 1) {
+        return interval + " days ago";
+      }
+      interval = Math.floor(seconds / 3600);
+      if (interval >= 1) {
+        return interval + " hours ago";
+      }
+      interval = Math.floor(seconds / 60);
+      if (interval >= 1) {
+        return interval + " minutes ago";
+      }
+      return " just now";
+    }
+  }
 };
 </script>
 
 <style lang="css" scoped>
+.dark .time-ago {
+  color: #e69fa9;
+}
+.time-ago {
+  color: #dc3e04;
+}
 .go-to {
   background: url("../assets/goto.png") no-repeat;
   display: inline-block;
@@ -65,6 +108,7 @@ export default {
 .pinned-text {
   font-style: italic;
   margin-left: 50px;
+  display: table-cell;
 }
 .tack {
   background: url("../assets/tack.png") no-repeat;
