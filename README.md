@@ -8,6 +8,8 @@ Hoy comencé a aplicar Vuex al proyecto, para empezar a practicar con el.
 
 ## Deploy
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/20d5a6f8-a002-41a9-89bf-a1c2aa281141/deploy-status)](https://app.netlify.com/sites/notreddit-stewartgf/deploys)
+
 - notreddit-stewartgf.netlify.com
 
 ## Plan

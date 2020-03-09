@@ -15,7 +15,7 @@ export default {};
 .lds-ellipsis {
   display: inline-block;
   position: relative;
-  width: 100px;
+  width: 85px;
   height: 150px;
 }
 .light .lds-ellipsis div {

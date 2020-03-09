@@ -37,6 +37,9 @@ export default {
   margin: 0;
   padding: 0;
   font-family: "Nunito";
+  /* Remueve el fondo azul cuando clickeas algo en la pagina  https://stackoverflow.com/a/45050338/12533883*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Remueve el fondo azul cuando clickeas algo en la pagina  https://stackoverflow.com/a/45050338/12533883*/
 }
 html,
 body {

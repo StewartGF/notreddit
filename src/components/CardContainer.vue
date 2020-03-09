@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="!isLoading" class="cards-container">
+    <div v-if="isLoading" class="cards-container">
       <loading-spinner />
     </div>
     <div v-else class="cards-container">
